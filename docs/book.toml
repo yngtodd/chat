@@ -7,3 +7,9 @@ title = "Le Chat"
 [build]
 build-dir = "book"
 create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+curly-quotes = true
+mathjax-support = true
