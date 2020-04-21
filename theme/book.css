@@ -1315,6 +1315,196 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 .ayu mark {
   background-color: #e3b171;
 }
+.gameboy {
+  color: #1e606e;
+  background-color: #c4f0c2;
+/* Inline code */
+/* Search */
+}
+.gameboy .content .header:link,
+.gameboy .content .header:visited {
+  color: #c5c5c5;
+}
+.gameboy .content .header:link:hover,
+.gameboy .content .header:visited:hover {
+  text-decoration: none;
+}
+.gameboy .menu-bar {
+  margin: auto -15px;
+}
+.gameboy .menu-bar > #menu-bar-sticky-container {
+  background-color: #c5c5c5;
+  border-bottom-color: #2d1b00;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.gameboy .menu-bar.bordered > #menu-bar-sticky-container {
+  border-bottom-color: #2d1b00;
+}
+.gameboy .sidebar {
+  background-color: #c5c5c5;
+  color: #1e606e;
+}
+.gameboy .sidebar::-webkit-scrollbar {
+  background: #c4f0c2;
+}
+.gameboy .sidebar::-webkit-scrollbar-thumb {
+  background: #c4f0c2;
+}
+.gameboy .chapter li {
+  color: #5c6773;
+}
+.gameboy .chapter li a {
+  color: #c8c9db;
+}
+.gameboy .chapter li .active,
+.gameboy .chapter li a:hover {
+/* Animate color change */
+  color: #5ab9a8;
+}
+.gameboy .chapter .spacer {
+  background-color: #c4f0c2;
+}
+.gameboy .menu-bar,
+.gameboy .menu-bar:visited,
+.gameboy .nav-chapters,
+.gameboy .nav-chapters:visited,
+.gameboy .mobile-nav-chapters,
+.gameboy .mobile-nav-chapters:visited,
+.gameboy .menu-bar .icon-button,
+.gameboy .menu-bar a i {
+  color: #1e606e;
+}
+.gameboy .menu-bar i:hover,
+.gameboy .menu-bar .icon-button:hover,
+.gameboy .nav-chapters:hover,
+.gameboy .mobile-nav-chapters i:hover {
+  color: #c4f0c2;
+}
+.gameboy .mobile-nav-chapters i:hover {
+  color: #5ab9a8;
+}
+.gameboy .mobile-nav-chapters {
+  background-color: #c4f0c2;
+}
+.gameboy #searchresults a,
+.gameboy .content a:link,
+.gameboy a:visited,
+.gameboy a > .hljs {
+  color: #5ab9a8;
+}
+.gameboy .theme-popup {
+  color: #1e606e;
+  background: #c4f0c2;
+  border: 1px solid #5c6773;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+.gameboy .theme-popup .theme:hover {
+  background-color: #c4f0c2;
+}
+.gameboy .theme-popup .default {
+  color: #737480;
+}
+.gameboy blockquote {
+  margin: 20px 0;
+  padding: 0 20px;
+  color: #1e606e;
+  background-color: #c4f0c2;
+  border-top: 0.1em solid #2d1b00;
+  border-bottom: 0.1em solid #2d1b00;
+}
+.gameboy table td {
+  border-color: #1e606e;
+}
+.gameboy table tbody tr:nth-child(2n) {
+  background: #c4f0c2;
+}
+.gameboy table thead {
+  background: #5ab9a8;
+}
+.gameboy table thead td {
+  border: none;
+}
+.gameboy table thead tr {
+  border: 1px #1e606e solid;
+}
+.gameboy :not(pre) > .hljs {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  color: #5ab9a8;
+}
+.gameboy a:hover > .hljs {
+  text-decoration: underline;
+}
+.gameboy pre {
+  position: relative;
+}
+.gameboy pre > .buttons {
+  position: absolute;
+  z-index: 100;
+  right: 5px;
+  top: 5px;
+  color: #1e606e;
+  cursor: pointer;
+}
+.gameboy pre > .buttons :hover {
+  color: #5ab9a8;
+}
+.gameboy pre > .buttons i {
+  margin-left: 8px;
+}
+.gameboy pre > .buttons button {
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: inherit;
+}
+.gameboy pre > .result {
+  margin-top: 10px;
+}
+.gameboy .icon-button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+.gameboy .icon-button i {
+  margin: 0;
+}
+.gameboy ::-webkit-scrollbar {
+  background: #2d1b00;
+}
+.gameboy ::-webkit-scrollbar-thumb {
+  background: #c4f0c2;
+}
+.gameboy #searchbar {
+  border: 1px solid #5ab9a8;
+  border-radius: 3px;
+  background-color: #c4f0c2;
+  color: #fff;
+}
+.gameboy #searchbar:focus,
+.gameboy #searchbar.active {
+  -webkit-box-shadow: 0 0 3px #5ab9a8;
+  box-shadow: 0 0 3px #1e606e;
+}
+.gameboy .searchresults-header {
+  color: #5ab9a8;
+}
+.gameboy .searchresults-outer {
+  border-bottom: 1px dashed #888;
+}
+.gameboy ul#searchresults li.focus {
+  background-color: #c4f0c2;
+}
+.gameboy mark {
+  background-color: #c4f0c2;
+}
 @media only print {
   #sidebar,
   #menu-bar,
