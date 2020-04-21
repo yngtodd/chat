@@ -1,3 +1,8 @@
-# Summary
+# Le Chat - Data Parallelism and Communication Patterns for Natural Language Processing
 
-- [Chapter 1](./chapter_1.md)
+[Foreword](foreword.md)
+[Introduction](ch00-00-introduction.md)
+
+## Getting Started
+
+- [Getting Started](ch01-00-getting-started.md)
