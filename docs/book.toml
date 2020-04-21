@@ -1,0 +1,5 @@
+[book]
+authors = ["yngtodd"]
+multilingual = false
+src = "src"
+title = "Study"
