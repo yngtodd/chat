@@ -3,3 +3,7 @@ authors = ["yngtodd"]
 multilingual = false
 src = "src"
 title = "Le Chat"
+
+[build]
+build-dir = "lechat"
+create-missing = false
