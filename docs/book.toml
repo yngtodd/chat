@@ -9,7 +9,13 @@ build-dir = "book"
 create-missing = false
 
 [output.html]
+theme = "tomorrow-night"
 default-theme = "light"
 preferred-dark-theme = "navy"
 curly-quotes = true
 mathjax-support = true
+
+[output.html.playpen]
+editable = false
+copy-js = true
+line-numbers = false
