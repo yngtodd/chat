@@ -1,4 +1,4 @@
-<h1>Chat<img src='https://github.com/yngtodd/chat/blob/master/img/snek.png' align='right' width='180' height='104'></h1>
+<h1>Chat<img src='https://github.com/yngtodd/chat/blob/master/img/jiji.png' align='right' width='190' height='238'></h1>
 
 
 [![Build Status](https://travis-ci.com/yngtodd/chat.svg?branch=master)](https://travis-ci.com/yngtodd/chat)
