@@ -9,8 +9,8 @@
 Data parallelism study for natural language processing.
 
 I am currently experimenting with recording the experiment process as a 
-[book](https://yngtodd.github.io/chat/). If you have any questions or would like to
-suggestions, feel free to open an issue. There is a template for the book; feel free
+[book](https://yngtodd.github.io/chat/). If you have any questions or would like to make a
+suggestion, feel free to open an issue. There is a template for the book; feel free
 to leave comments!
 
 
