@@ -1,6 +1,6 @@
 # Data Parallelism and Communication Patterns for Natural Language Processing
 
-[The Rust Programming Language](title-page.md)
+[Communication Patterns](title-page.md)
 [Foreword](foreword.md)
 [Introduction](ch00-00-introduction.md)
 
