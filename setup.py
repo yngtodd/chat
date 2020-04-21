@@ -1,3 +1,5 @@
+import os
+import sys
 from setuptools import setup, find_packages
 
 
@@ -17,6 +19,11 @@ requirements = ['argh',]
 COMMANDS = [
     'greet = chat.cli:greet',
 ]
+
+
+if sys.argv[-1] == 'publish':
+    os.system('python setup.py sdist upload')
+    sys.exit()
 
 
 setup(
