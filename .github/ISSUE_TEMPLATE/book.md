@@ -2,8 +2,8 @@
 name: Book
 about: Feedback for the book!
 title: ''
-labels: ''
-assignees: ''
+labels: 'Type: Book'
+assignees: 'yngtodd'
 
 ---
 
