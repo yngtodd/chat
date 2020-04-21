@@ -1125,85 +1125,85 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 .rust mark {
   background-color: #e69f67;
 }
-.ayu {
+.gameboy {
   color: #c5c5c5;
   background-color: #0f1419;
 /* Inline code */
 /* Search */
 }
-.ayu .content .header:link,
-.ayu .content .header:visited {
+.gameboy .content .header:link,
+.gameboy .content .header:visited {
   color: #c5c5c5;
 }
-.ayu .content .header:link:hover,
-.ayu .content .header:visited:hover {
+.gameboy .content .header:link:hover,
+.gameboy .content .header:visited:hover {
   text-decoration: none;
 }
-.ayu .menu-bar {
+.gameboy .menu-bar {
   margin: auto -15px;
 }
-.ayu .menu-bar > #menu-bar-sticky-container {
+.gameboy .menu-bar > #menu-bar-sticky-container {
   background-color: #0f1419;
   border-bottom-color: #0f1419;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-.ayu .menu-bar.bordered > #menu-bar-sticky-container {
+.gameboy .menu-bar.bordered > #menu-bar-sticky-container {
   border-bottom-color: #182028;
 }
-.ayu .sidebar {
+.gameboy .sidebar {
   background-color: #14191f;
   color: #c8c9db;
 }
-.ayu .sidebar::-webkit-scrollbar {
+.gameboy .sidebar::-webkit-scrollbar {
   background: #14191f;
 }
-.ayu .sidebar::-webkit-scrollbar-thumb {
+.gameboy .sidebar::-webkit-scrollbar-thumb {
   background: #c8c9db;
 }
-.ayu .chapter li {
+.gameboy .chapter li {
   color: #5c6773;
 }
-.ayu .chapter li a {
+.gameboy .chapter li a {
   color: #c8c9db;
 }
-.ayu .chapter li .active,
-.ayu .chapter li a:hover {
+.gameboy .chapter li .active,
+.gameboy .chapter li a:hover {
 /* Animate color change */
   color: #ffb454;
 }
-.ayu .chapter .spacer {
+.gameboy .chapter .spacer {
   background-color: #2d334f;
 }
-.ayu .menu-bar,
-.ayu .menu-bar:visited,
-.ayu .nav-chapters,
-.ayu .nav-chapters:visited,
-.ayu .mobile-nav-chapters,
-.ayu .mobile-nav-chapters:visited,
-.ayu .menu-bar .icon-button,
-.ayu .menu-bar a i {
+.gameboy .menu-bar,
+.gameboy .menu-bar:visited,
+.gameboy .nav-chapters,
+.gameboy .nav-chapters:visited,
+.gameboy .mobile-nav-chapters,
+.gameboy .mobile-nav-chapters:visited,
+.gameboy .menu-bar .icon-button,
+.gameboy .menu-bar a i {
   color: #737480;
 }
-.ayu .menu-bar i:hover,
-.ayu .menu-bar .icon-button:hover,
-.ayu .nav-chapters:hover,
-.ayu .mobile-nav-chapters i:hover {
+.gameboy .menu-bar i:hover,
+.gameboy .menu-bar .icon-button:hover,
+.gameboy .nav-chapters:hover,
+.gameboy .mobile-nav-chapters i:hover {
   color: #b7b9cc;
 }
-.ayu .mobile-nav-chapters i:hover {
+.gameboy .mobile-nav-chapters i:hover {
   color: #c8c9db;
 }
-.ayu .mobile-nav-chapters {
+.gameboy .mobile-nav-chapters {
   background-color: #14191f;
 }
-.ayu #searchresults a,
-.ayu .content a:link,
-.ayu a:visited,
-.ayu a > .hljs {
+.gameboy #searchresults a,
+.gameboy .content a:link,
+.gameboy a:visited,
+.gameboy a > .hljs {
   color: #0096cf;
 }
-.ayu .theme-popup {
+.gameboy .theme-popup {
   color: #c5c5c5;
   background: #14191f;
   border: 1px solid #5c6773;
@@ -1212,13 +1212,13 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
   list-style: none;
   display: none;
 }
-.ayu .theme-popup .theme:hover {
+.gameboy .theme-popup .theme:hover {
   background-color: #191f26;
 }
-.ayu .theme-popup .default {
+.gameboy .theme-popup .default {
   color: #737480;
 }
-.ayu blockquote {
+.gameboy blockquote {
   margin: 20px 0;
   padding: 0 20px;
   color: #c5c5c5;
@@ -1226,35 +1226,35 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
   border-top: 0.1em solid #2f333f;
   border-bottom: 0.1em solid #2f333f;
 }
-.ayu table td {
+.gameboy table td {
   border-color: #182028;
 }
-.ayu table tbody tr:nth-child(2n) {
+.gameboy table tbody tr:nth-child(2n) {
   background: #141b22;
 }
-.ayu table thead {
+.gameboy table thead {
   background: #324354;
 }
-.ayu table thead td {
+.gameboy table thead td {
   border: none;
 }
-.ayu table thead tr {
+.gameboy table thead tr {
   border: 1px #324354 solid;
 }
-.ayu :not(pre) > .hljs {
+.gameboy :not(pre) > .hljs {
   display: inline-block;
   vertical-align: middle;
   padding: 0.1em 0.3em;
   border-radius: 3px;
   color: #ffb454;
 }
-.ayu a:hover > .hljs {
+.gameboy a:hover > .hljs {
   text-decoration: underline;
 }
-.ayu pre {
+.gameboy pre {
   position: relative;
 }
-.ayu pre > .buttons {
+.gameboy pre > .buttons {
   position: absolute;
   z-index: 100;
   right: 5px;
@@ -1262,57 +1262,57 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
   color: #c8c9db;
   cursor: pointer;
 }
-.ayu pre > .buttons :hover {
+.gameboy pre > .buttons :hover {
   color: #ffb454;
 }
-.ayu pre > .buttons i {
+.gameboy pre > .buttons i {
   margin-left: 8px;
 }
-.ayu pre > .buttons button {
+.gameboy pre > .buttons button {
   color: inherit;
   background: transparent;
   border: none;
   cursor: inherit;
 }
-.ayu pre > .result {
+.gameboy pre > .result {
   margin-top: 10px;
 }
-.ayu .icon-button {
+.gameboy .icon-button {
   border: none;
   background: none;
   padding: 0;
   color: inherit;
 }
-.ayu .icon-button i {
+.gameboy .icon-button i {
   margin: 0;
 }
-.ayu ::-webkit-scrollbar {
+.gameboy ::-webkit-scrollbar {
   background: #0f1419;
 }
-.ayu ::-webkit-scrollbar-thumb {
+.gameboy ::-webkit-scrollbar-thumb {
   background: #c8c9db;
 }
-.ayu #searchbar {
+.gameboy #searchbar {
   border: 1px solid #848484;
   border-radius: 3px;
   background-color: #424242;
   color: #fff;
 }
-.ayu #searchbar:focus,
-.ayu #searchbar.active {
+.gameboy #searchbar:focus,
+.gameboy #searchbar.active {
   -webkit-box-shadow: 0 0 3px #d4c89f;
   box-shadow: 0 0 3px #d4c89f;
 }
-.ayu .searchresults-header {
+.gameboy .searchresults-header {
   color: #666;
 }
-.ayu .searchresults-outer {
+.gameboy .searchresults-outer {
   border-bottom: 1px dashed #888;
 }
-.ayu ul#searchresults li.focus {
+.gameboy ul#searchresults li.focus {
   background-color: #252932;
 }
-.ayu mark {
+.gameboy mark {
   background-color: #e3b171;
 }
 .gameboy {
