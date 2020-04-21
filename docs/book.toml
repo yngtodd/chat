@@ -9,7 +9,7 @@ build-dir = "book"
 create-missing = false
 
 [output.html]
-theme = "tomorrow-night"
+theme = "gameboy"
 default-theme = "light"
 preferred-dark-theme = "navy"
 curly-quotes = true
