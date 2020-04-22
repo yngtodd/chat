@@ -1,4 +1,4 @@
-# Foreword
+# Foreward
 
 This book is a bit of an experiment in itself. Rather than simply writing documentation
 in the form of docstrings with some extra files here and there, I thought it would be
