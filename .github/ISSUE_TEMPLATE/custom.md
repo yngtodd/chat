@@ -1,6 +1,6 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: Blank page 
+about: Not a bug or a feature request? Use this! 
 title: ''
 labels: ''
 assignees: ''
