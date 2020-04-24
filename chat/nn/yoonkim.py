@@ -61,9 +61,7 @@ class YoonKimCNN(nn.Module):
         self.embedding.load_state_dict({'weight': embeddings})
 
         if frozen:
-            embedding.weight.requires_grad = False
-
-        return embedding
+            self.embedding.weight.requires_grad = False
 
     def _initialize_params(self):
         for name, param in self.named_parameters():
