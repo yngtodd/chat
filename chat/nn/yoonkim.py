@@ -1,16 +1,22 @@
+import toml
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+from pathlib import Path
+from dataclasses import dataclass
 
+
+@dataclass
 class Hyperparameters:
-    kernel1 = 3
-    kernel2 = 4
-    kernel3 = 5
-    n_filters = 300
-    word_dim = 300
-    vocab_size = 10_000
-    max_sent_len = 4_330
+    kernel1: int = 3
+    kernel2: int = 4
+    kernel3: int = 5
+    n_filters: int = 300
+    word_dim: int = 300
+    vocab_size: int = 10_000
+    max_sent_len: int = 4_330
+    num_classes: int = 2
 
 
 class Conv1d(nn.Module):
@@ -37,22 +43,21 @@ class YoonKimCNN(nn.Module):
     """ Yoon Kim's Text CNN
 
     Args:
-        num_classes: number of classification classes
         hparams: hyperparameters of the model
 
     Reference:
         https://www.aclweb.org/anthology/D14-1181
     """
 
-    def __init__(self, num_classes, hparams, frozen=False):
+    def __init__(self, hparams=Hyperparameters()):
         super(YoonKimCNN, self).__init__()
-        self.hp = hparams
+        self.hparams = hparams
 
         self.embedding = nn.Embedding(hparams.vocab_size, hparams.word_dim, padding_idx=0)
         self.conv1 = Conv1d(hparams.word_dim, hparams.n_filters, hparams.kernel1)
         self.conv2 = Conv1d(hparams.word_dim, hparams.n_filters, hparams.kernel2)
         self.conv3 = Conv1d(hparams.word_dim, hparams.n_filters, hparams.kernel3)
-        self.fc = nn.Linear(self._sum_filters(), num_classes)
+        self.fc = nn.Linear(self._sum_filters(), hparams.num_classes)
 
         self._initialize_params()
 
@@ -72,7 +77,7 @@ class YoonKimCNN(nn.Module):
 
     def _sum_filters(self):
         """Total number of convolution filters for the three layers"""
-        return self.hp.n_filters * 3
+        return self.hparams.n_filters * 3
 
     def loss_value(self, y_pred, y_true):
         """ Calculate a value of loss function """
@@ -80,14 +85,24 @@ class YoonKimCNN(nn.Module):
 
     def forward(self, x):
         x = self.embedding(x)
-        # Make sure self.hp.word_dim is the channel dim for convolution
+        # Make sure hparams.word_dim is the channel dim for convolution
         x = x.transpose(1, 2)
 
         conv_results = []
-        conv_results.append(self.conv1(x).view(-1, self.hp.n_filters))
-        conv_results.append(self.conv2(x).view(-1, self.hp.n_filters))
-        conv_results.append(self.conv2(x).view(-1, self.hp.n_filters))
+        conv_results.append(self.conv1(x).view(-1, self.hparams.n_filters))
+        conv_results.append(self.conv2(x).view(-1, self.hparams.n_filters))
+        conv_results.append(self.conv2(x).view(-1, self.hparams.n_filters))
         x = torch.cat(conv_results, 1)
         logits = self.fc(x)
         return logits
+
+
+def create(config: Path) -> YoonKimCNN:
+    """ Construct the model from a config file 
+
+    Args:
+        config: path the a toml config file
+    """
+    config = toml.load(config)
+    return YoonKimCNN(Hyperparameters(**config['model']))
 
